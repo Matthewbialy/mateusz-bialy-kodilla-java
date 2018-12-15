@@ -12,16 +12,34 @@ public class ShapeCollector implements Shape.Shape {
 
     public static void main(String[] args) {
 
-        ArrayList<Shape> figure = new ArrayList<Shape>();
-            figure.add(Circle);
-            figure.add(Square);
-            figure.add(Triangle);
 
-        ArrayList<Shape> figure1 = new ArrayList<Shape>();
-            figure1.remove(Circle);
+        private Shape shape;
 
+       public ShapeCollector(Shape shape) {
+            this.shape = shape;
+        }
 
+        Circle circle = new Circle();
+        Square square = new Square();
+        Triangle triangle = new Triangle();
 
+        ArrayList<Shape> figureList = new ArrayList<>();
+
+        public void addFigure (Shape shape){
+            figureList.add(shape);
+        }
+        public void removeFigure (Shape shape){
+            figureList.remove(shape);
+        }
+        public void getFigure (int n){
+            figureList.get(n);
+        }
 
     }
-}
+
+    protected static ArrayList<Shape> removeFigure() {
+    }
+    protected static ArrayList<Shape> addFigure() {
+    }
+    protected static ArrayList<Shape> getFigure() {
+    }

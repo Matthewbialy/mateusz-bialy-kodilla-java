@@ -17,6 +17,7 @@ public class Triangle implements Shape.Shape {
 
     @Override
     public double getField2() {
+
         return Math.atan2(b*h) / 2 ;
     }
 }

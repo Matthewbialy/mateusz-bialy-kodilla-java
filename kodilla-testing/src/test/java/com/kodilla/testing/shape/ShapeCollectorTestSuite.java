@@ -2,26 +2,39 @@ package com.kodilla.testing.collection;
 
 
 import com.kodilla.ShapeCollector;
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class CollectionTestSuite implements ShapeCollector{
+
     public static void main(String[] args) {
     }
 
     @Before
     public void before() {
+
         System.out.println("Test Case: begin");
+    }
+
+    @BeforeClass
+    public static void beforeAllTests() {
+        System.out.println("This is the beginning of tests.");
+    }
+
+    @AfterClass
+    public static void afterAllTests() {
+        System.out.println("All tests are finished.");
     }
 
     @After
     public void after() {
         System.out.println("Test Case: end");
     }
+
+
+}
 
     @Test
     public void testAddFigureName() {
@@ -54,11 +67,27 @@ public class CollectionTestSuite implements ShapeCollector{
         figureRemove.remove(triangle);
 
         //When
-        ArrayList<Shape> figureRemove1 = ShapeCollector.removeFigure1();
+        ArrayList<Shape> figureRemove1 = ShapeCollector.removeFigure();
         System.out.println("List:"+ figureRemove1);
 
         //Then
         Assert.assertEquals(figureRemove, figureRemove1);
 
+    }
+
+    @Test
+    public void testGetFigure() {
+        //Given
+        Triangle triangle =  new Triangle();
+        Circle circle =  new Circle();
+        Square square = new Square();
+
+        ArrayList<Shape> getFigure = new ArrayList<>();
+
+        //When
+        ArrayList<Shape.Shape> getFigureShape = ShapeCollector.getFigure();
+
+        //Then
+        Assert.assertEquals(getFigureShape, getFigure);
     }
 
