@@ -1,6 +1,6 @@
 package com.kodilla.testing.collection;
 
-public class Triangle implements Shape.Shape {
+public class Triangle implements Shape {
 
     double b = 3.0;
     double h = 1.5;

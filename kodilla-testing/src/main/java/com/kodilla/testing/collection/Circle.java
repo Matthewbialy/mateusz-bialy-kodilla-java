@@ -1,6 +1,6 @@
 package com.kodilla.testing.collection;
 
-public class Circle implements Shape.Shape {
+public class Circle implements Shape {
 
     double radius;
 

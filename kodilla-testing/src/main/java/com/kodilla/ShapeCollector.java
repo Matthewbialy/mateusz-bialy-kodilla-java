@@ -8,7 +8,7 @@ import com.kodilla.testing.collection.Triangle;
 
 import java.util.ArrayList;
 
-public class ShapeCollector implements Shape.Shape {
+public class ShapeCollector implements Shape {
 
     public static void main(String[] args) {
 
