@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.StatisticsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-18T20:22:33" hostname="Air-Mateusz.home" time="0.285">
+  <properties/>
+  <testcase name="getStatisticsTest" classname="com.kodilla.testing.forum.StatisticsTest" time="0.285"/>
+  <system-out><![CDATA[Test Case: begin
+Test Case: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

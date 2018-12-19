@@ -2,8 +2,8 @@ package com.kodilla.testing.collection;
 
 public class Triangle implements Shape {
 
-    double b = 3.0;
-    double h = 1.5;
+    double b;
+    double h;
 
     public Triangle(double b, double h) {
         this.b = b;
@@ -11,13 +11,13 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public String getName2() {
+    public String getName() {
         return "Triangle";
     }
 
     @Override
-    public double getField2() {
+    public double getField() {
 
-        return Math.atan2(b*h) / 2 ;
+        return (b*h) / 2 ;
     }
 }

@@ -1,13 +1,12 @@
-package com.kodilla.testing.collection;
+package com.kodilla.testing.shape;
 
 
-import com.kodilla.ShapeCollector;
+import com.kodilla.testing.collection.*;
 import org.junit.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class CollectionTestSuite implements ShapeCollector{
+public class ShapeCollectorTestSuite {
 
     public static void main(String[] args) {
     }
@@ -34,60 +33,38 @@ public class CollectionTestSuite implements ShapeCollector{
     }
 
 
-}
-
     @Test
     public void testAddFigureName() {
         //Given
-        Triangle triangle = new Triangle ();
-        Circle circle = new Circle ();
-        Square square = new Square ();
+        Triangle triangle = new Triangle(3.0, 1.5);
+        Circle circle = new Circle(4);
+        Square square = new Square(5);
 
-        ArrayList<Shape> figureShape = new ArrayList<Shape>();
-        figureShape.add(triangle);
-        figureShape.add(circle);
-        figureShape.add(square);
+        ShapeCollector sc = new ShapeCollector();
+
 
         //When
-        ArrayList<Shape> figureShape1 = ShapeCollector.addFigure();
-        System.out.println("Name:" + figureShape1);
+        sc.addFigure(triangle);
 
         //Then
-        Assert.assertEquals(figureShape,figureShape1);
+        Assert.assertEquals(triangle, sc.getFigure(0));
     }
 
     @Test
     public void testRemoveFigure() {
-        //Given
-        Triangle triangle = new Triangle ();
-        Circle circle = new Circle ();
-        Square square = new Square ();
 
-        ArrayList<Shape> figureRemove = new ArrayList<Shape>();
-        figureRemove.remove(triangle);
+        //Given
+        ShapeCollector shape = new ShapeCollector();
+        Circle circle = new Circle(4);
+        shape.addFigure(circle);
 
         //When
-        ArrayList<Shape> figureRemove1 = ShapeCollector.removeFigure();
-        System.out.println("List:"+ figureRemove1);
+        shape.removeFigure(circle);
 
         //Then
-        Assert.assertEquals(figureRemove, figureRemove1);
+        Assert.assertNotNull(shape);
+
 
     }
-
-    @Test
-    public void testGetFigure() {
-        //Given
-        Triangle triangle =  new Triangle();
-        Circle circle =  new Circle();
-        Square square = new Square();
-
-        ArrayList<Shape> getFigure = new ArrayList<>();
-
-        //When
-        ArrayList<Shape.Shape> getFigureShape = ShapeCollector.getFigure();
-
-        //Then
-        Assert.assertEquals(getFigureShape, getFigure);
-    }
+}
 

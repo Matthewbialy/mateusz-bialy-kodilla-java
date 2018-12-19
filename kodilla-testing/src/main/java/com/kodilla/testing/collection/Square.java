@@ -2,7 +2,7 @@ package com.kodilla.testing.collection;
 
 public class Square implements Shape {
 
-    double a = 5.0;
+    double a ;
 
     public Square (double a){
 
@@ -10,13 +10,13 @@ public class Square implements Shape {
     }
 
     @Override
-    public String getName1() {
+    public String getName() {
 
         return "square";
     }
 
     @Override
-    public double getField1() {
+    public double getField() {
 
         return Math.abs(a*a);
     }
