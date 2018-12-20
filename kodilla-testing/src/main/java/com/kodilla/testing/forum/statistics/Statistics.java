@@ -15,9 +15,27 @@ public class Statistics {
       postsCount = statistics.postsCount();
       commentsCount = statistics.commentsCount();
 
-      avgUserPosts = postsCount / usersCount;
-      avgUserComments = commentsCount / usersCount;
-      avgUserPosts = commentsCount / postsCount;
+      double avgUserPosts;
+
+      if (postsCount > 0 ) {
+          avgUserPosts = (double) postsCount / usersCount;
+      }else {
+          avgUserPosts = 0;
+      }
+
+      double avgUserComments ;
+      if (usersCount > 0) {
+          avgUserComments = commentsCount / (double) usersCount;
+      }else {
+          avgUserComments = 0;
+      }
+
+      double avgPostComments;
+      if (commentsCount > 0) {
+          avgPostComments = postsCount / (double) commentsCount;
+      }else {
+          avgPostComments = 0;
+      }
   }
 
   public void showStatistic(Statistics statistics) {
