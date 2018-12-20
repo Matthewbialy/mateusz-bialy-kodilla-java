@@ -21,7 +21,7 @@ public class ShapeCollector  {
        return figureList.get(n);
     }
 
-    public int checkFigureList (Shape shape){
+    public int checkFigureList() {
         return figureList.size();
     }
 }

@@ -61,8 +61,9 @@ public class ShapeCollectorTestSuite {
         //When
         shape.removeFigure(circle);
 
+
         //Then
-        Assert.assertNotNull(shape);
+        Assert.assertEquals(0, shape.checkFigureList());
 
 
     }
