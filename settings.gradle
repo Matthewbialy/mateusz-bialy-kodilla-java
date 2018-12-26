@@ -13,4 +13,6 @@ include 'kodilla-stream'
 include 'kodilla-stream-newOne'
 include 'kodilla-stream'
 include 'com.kodilla-stream'
+include 'kodilla-stream'
+include 'kodilla-stream-one'
 
