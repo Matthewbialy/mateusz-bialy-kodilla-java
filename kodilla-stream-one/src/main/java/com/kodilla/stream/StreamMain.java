@@ -1,40 +1,40 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemBeautifier;
-import com.kodilla.stream.beautifier.PoemDecorator;
-import com.kodilla.stream.iterate.NumbersGenerator;
-import com.kodilla.stream.lambda.*;
-import com.kodilla.stream.reference.FunctionalCalculator;
 
 
+import com.kodilla.stream.forumuser.Forum;
+import com.kodilla.stream.forumuser.ForumUser;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamMain {
     public static void main(String [] args) {
 
-        ExpressionExecutor expressionExecutor = new ExpressionExecutor();
+        ForumUser forumUser = new ForumUser(00111, "Matthew", 'M', LocalDate.of(1991,12,3), 12);
+        Forum forum = new Forum();
 
-        expressionExecutor.executeExpression(10,5, (a, b) -> a + b);
-        expressionExecutor.executeExpression(10,5, (a, b) -> a - b);
-        expressionExecutor.executeExpression(10,5, (a, b) -> a * b);
-        expressionExecutor.executeExpression(10,5, (a, b) -> a / b);
+        Map<Integer, ForumUser> theList = forum.getUserList().stream()
+                .filter(forumUser1 -> forumUser.getPosts() > 1)
+                .filter(forumUser1 -> forumUser.getSex() == 'M')
+                .filter(forumUser1-> forumUser.getDateOfBirth().getDayOfYear() < 1998)
+                .collect(Collectors.toMap(ForumUser::getId, forumUser1 -> forumUser ));
 
-        expressionExecutor.executeExpression(3, 4, FunctionalCalculator::multiplyAByB);
-        expressionExecutor.executeExpression(3,4,FunctionalCalculator::addAToB);
-        expressionExecutor.executeExpression(3,4,FunctionalCalculator::subBFromA);
-        expressionExecutor.executeExpression(3,4,FunctionalCalculator::divideAByB);
+                System.out.println("The List Of Users:" + theList.size());
+                theList.entrySet().stream()
+                        .map(entry-> entry.getKey() + ":" + entry.getValue())
+                        .forEach(System.out::println);
 
-        PoemBeautifier poemBeautifier = new PoemBeautifier();
-        String result = poemBeautifier.beautify("ABC" + " " + "TeXt to decorate" + " " + "ABC",(a)->a.toLowerCase());
-        System.out.println(result);
 
-        String result1 = poemBeautifier.beautify("Text to change",(b)->b.toUpperCase());
-        System.out.println(result1);
 
-        String result2 = poemBeautifier.beautify("Another text to decorate",(c)->c.substring(5));
-        System.out.println(result2);
 
-        System.out.println("USing Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generateEven(20);
+
+
+
+
 
 
     }
