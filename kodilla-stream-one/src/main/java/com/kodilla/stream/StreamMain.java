@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class StreamMain {
     public static void main(String [] args) {
 
-        ForumUser forumUser = new ForumUser(00111, "Matthew", 'M', LocalDate.of(1991,12,3), 12);
+        ForumUser forumUser = new ForumUser(001, "Matthew", 'M',LocalDate.of(1991,12,01), 12);
         Forum forum = new Forum();
 
         Map<Integer, ForumUser> theList = forum.getUserList().stream()
