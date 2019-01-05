@@ -15,4 +15,7 @@ include 'kodilla-stream'
 include 'com.kodilla-stream'
 include 'kodilla-stream'
 include 'kodilla-stream-one'
+include 'com.kodilla.exception'
+include 'kodilla-exception-new'
+findProject(':kodilla-exception-new')?.name = 'kodilla-exception'
 
