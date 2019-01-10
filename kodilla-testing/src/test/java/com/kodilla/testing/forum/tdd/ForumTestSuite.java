@@ -21,6 +21,6 @@ public class ForumTestSuite {
     @Before
     public void beforeEveryTest() {
         testCounter++;
-        System.out.println("Preparing to execute test #" + testCounter);
+        System.out.println("Preparing to execute com.kodilla.exception.test #" + testCounter);
     }
 }

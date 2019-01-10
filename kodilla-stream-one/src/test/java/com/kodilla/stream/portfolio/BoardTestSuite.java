@@ -18,7 +18,7 @@ public class BoardTestSuite {
         User user4 = new User("developer3", "Konrad Bridge");
         //tasks
         Task task1 = new Task("Microservice for taking temperature",
-                "Write and test the microservice taking\n" +
+                "Write and com.kodilla.exception.test the microservice taking\n" +
                         "the temperaure from external service",
                 user1,
                 user2,

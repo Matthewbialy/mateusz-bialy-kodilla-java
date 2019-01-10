@@ -9,7 +9,7 @@ public class TestingMain {
         int expected = 2;
 
         if (expected == result) {
-            System.out.println("test OK");
+            System.out.println("com.kodilla.exception.test OK");
         }else{
             System.out.println("Error");
         }
