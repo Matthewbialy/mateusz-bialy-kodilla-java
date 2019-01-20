@@ -4,12 +4,12 @@ public class Aplication {
 
     public static void main(String[] args) {
 
-        Shop shop = null;
-        if (shop.getShopKind().equals("HealtyShop")) {
+    OrderProcessor orderProcessor = new OrderProcessor(new ExtraFoodShop("ExtraShop", "ExtraFood", 3),
+            new HealthyShop("HealthyShop", "HealthyFood", 3),
+            new GlutenFreeShop("GlutenFreeShop", "GlutenFree", 5));
 
-        }else {
+    orderProcessor.process("ExtraFoodShop");
 
-        }
 
 
     }

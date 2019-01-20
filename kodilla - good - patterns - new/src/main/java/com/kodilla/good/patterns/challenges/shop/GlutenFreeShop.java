@@ -1,6 +1,6 @@
 package com.kodilla.good.patterns.challenges.shop;
 
-public class GlutenFreeShop {
+public class GlutenFreeShop implements Shop {
 
     private String nameOfSupplier;
     private String productType;
@@ -25,7 +25,10 @@ public class GlutenFreeShop {
         return productQuanity;
     }
 
+    @Override
+    public void processOrder() {
 
+    }
 
 
 }

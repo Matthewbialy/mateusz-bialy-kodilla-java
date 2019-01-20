@@ -1,6 +1,6 @@
 package com.kodilla.good.patterns.challenges.shop;
 
-public class ExtraFoodShop {
+public class ExtraFoodShop implements Shop {
 
     private String nameOfSupplier;
     private String productType;
@@ -27,4 +27,8 @@ public class ExtraFoodShop {
     }
 
 
+    @Override
+    public void processOrder() {
+
+    }
 }

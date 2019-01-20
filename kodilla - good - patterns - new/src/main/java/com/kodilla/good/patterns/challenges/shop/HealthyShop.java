@@ -1,6 +1,6 @@
 package com.kodilla.good.patterns.challenges.shop;
 
-public class HealthyShop {
+public class HealthyShop implements Shop {
 
     private String nameOfSupplier;
     private String productType;
@@ -25,5 +25,8 @@ public class HealthyShop {
         return productQuanity;
     }
 
+    @Override
+    public void processOrder() {
 
+    }
 }
