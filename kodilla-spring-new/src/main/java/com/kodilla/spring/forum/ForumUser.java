@@ -8,12 +8,8 @@ public class ForumUser {
 
     String userName;
 
-    public String ForumUser(final String userName) {
-        this.userName = userName;
-        return "John Smith";
+    public ForumUser() {
+        this.userName = "John Smith";
     }
 
-    public String getUserName() {
-        return "John Smith";
-    }
 }
