@@ -22,7 +22,7 @@ public class ForumUserTestSuite {
                     new AnnotationConfigApplicationContext("com.kodilla.spring");
             ForumUser forumUser = context.getBean(ForumUser.class);
             //When
-            String name = forumUser.userName;
+            String name = forumUser.getUserName();
             //Then
             Assert.assertEquals("John Smith", name);
         }
