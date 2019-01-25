@@ -1,6 +1,6 @@
 package com.kodilla.exception.test;
 
-public final class ExceptionHandling  {
+public final class ExceptionHandling {
 
     public static void main(String[] args) {
 
@@ -8,9 +8,9 @@ public final class ExceptionHandling  {
 
         try {
             secondChallenge.probablyIWillThrowException(3.0, 3.0);
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("problem has been gone...");
-        }finally {
+        } finally {
             System.out.println("Try - Catch - Finally - Succesfull");
         }
     }

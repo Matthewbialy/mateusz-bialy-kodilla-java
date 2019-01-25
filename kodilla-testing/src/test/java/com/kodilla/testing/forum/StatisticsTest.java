@@ -39,7 +39,7 @@ public class StatisticsTest {
         int commentsCount = 0;
 
         List<String> list = new ArrayList<>();
-        for(int n = 0; n < usersCount; n++) {
+        for (int n = 0; n < usersCount; n++) {
             list.add("User" + n);
         }
 
@@ -59,11 +59,11 @@ public class StatisticsTest {
         double commentsAveragePerPost = statistics.getAvgPostComments();
 
         //Then
-        Assert.assertEquals(1000, postsCount,0.001);
-        Assert.assertEquals(0,commentsCount,0.001);
-        Assert.assertEquals(100,usersCount,0.001);
-        Assert.assertEquals(0,commentsAveragePerUser, 000.1);
-        Assert.assertEquals(0,commentsAveragePerPost, 000.1);
+        Assert.assertEquals(1000, postsCount, 0.001);
+        Assert.assertEquals(0, commentsCount, 0.001);
+        Assert.assertEquals(100, usersCount, 0.001);
+        Assert.assertEquals(0, commentsAveragePerUser, 000.1);
+        Assert.assertEquals(0, commentsAveragePerPost, 000.1);
 
 
     }
@@ -76,7 +76,7 @@ public class StatisticsTest {
         int postCount = 0;
 
         List<String> list = new ArrayList<>();
-        for(int n = 0; n < usersCount; n++) {
+        for (int n = 0; n < usersCount; n++) {
             list.add("User" + n);
         }
 
@@ -88,12 +88,12 @@ public class StatisticsTest {
         when(statisticsMockito.usersNames()).thenReturn(list);
 
 
-       //When
-       statistics.calculateAdvStatistics(statisticsMockito);
+        //When
+        statistics.calculateAdvStatistics(statisticsMockito);
 
         //Then
-        Assert.assertEquals(0,usersCount,000.1);
-        Assert.assertEquals(0,postCount,0.001);
+        Assert.assertEquals(0, usersCount, 000.1);
+        Assert.assertEquals(0, postCount, 0.001);
     }
 
     @Test
@@ -102,7 +102,7 @@ public class StatisticsTest {
         int usersCount = 1000;
 
         List<String> list = new ArrayList<>();
-        for(int n = 0; n < usersCount; n++) {
+        for (int n = 0; n < usersCount; n++) {
             list.add("User" + n);
         }
 
@@ -117,7 +117,7 @@ public class StatisticsTest {
         statistics.calculateAdvStatistics(statisticsMockito);
 
         //Then
-        Assert.assertEquals(10, statistics.getCommentsCount(),0.001);
+        Assert.assertEquals(10, statistics.getCommentsCount(), 0.001);
     }
 
     @Test
@@ -125,7 +125,7 @@ public class StatisticsTest {
         int usersCount = 1000;
 
         List<String> list = new ArrayList<>();
-        for(int n = 0; n < usersCount; n++) {
+        for (int n = 0; n < usersCount; n++) {
             list.add("User" + n);
         }
         InterfaceStatistic statisticsMockito = mock(InterfaceStatistic.class);
@@ -138,7 +138,7 @@ public class StatisticsTest {
         statistics.calculateAdvStatistics(statisticsMockito);
 
         //Then
-        Assert.assertEquals(10,statistics.getPostsCount(),0.001);
+        Assert.assertEquals(10, statistics.getPostsCount(), 0.001);
     }
 }
 

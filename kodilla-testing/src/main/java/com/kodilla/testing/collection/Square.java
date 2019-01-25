@@ -2,9 +2,9 @@ package com.kodilla.testing.collection;
 
 public class Square implements Shape {
 
-    double a ;
+    double a;
 
-    public Square (double a){
+    public Square(double a) {
 
         this.a = a;
     }
@@ -18,6 +18,6 @@ public class Square implements Shape {
     @Override
     public double getField() {
 
-        return Math.abs(a*a);
+        return Math.abs(a * a);
     }
 }

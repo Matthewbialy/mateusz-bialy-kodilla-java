@@ -1,7 +1,6 @@
 package com.kodilla.testing.library;
 
 
-
 public class Book {
 
     String title;
@@ -34,13 +33,13 @@ public class Book {
         Book book = (Book) obj;
 
         if (publicationYear != book.publicationYear) return false;
-        if (!title.equals(book.title))return false;
+        if (!title.equals(book.title)) return false;
         return author.equals(book.author);
     }
 
     @Override
     public String toString() {
-        return "Book{" + "title=" + title + '\'' + ", author=" + author + '\''+ ", publicationYear=" + publicationYear + '}';
+        return "Book{" + "title=" + title + '\'' + ", author=" + author + '\'' + ", publicationYear=" + publicationYear + '}';
     }
 
     @Override

@@ -10,7 +10,7 @@ public class SimpleInvoiceTestSuite {
         //Given
         SimpleInvoice invoice = new SimpleInvoice();
         //When
-        invoice.addItem(new Simpleitem(new SimpleProduct("Product1", 17.28),2.0));
+        invoice.addItem(new Simpleitem(new SimpleProduct("Product1", 17.28), 2.0));
         invoice.addItem(new Simpleitem(new SimpleProduct("Product2", 11.99), 3.5));
         invoice.addItem(new Simpleitem(new SimpleProduct("Product3", 6.49), 5.0));
         //Then

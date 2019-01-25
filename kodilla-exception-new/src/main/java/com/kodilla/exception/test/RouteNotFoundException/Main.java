@@ -9,7 +9,7 @@ public class Main extends LogicAirport {
         LogicAirport logicAirport = new LogicAirport();
         Boolean result = false;
         try {
-            result= logicAirport.findFlight(new Flight("Heathrow", "Heathrow"));
+            result = logicAirport.findFlight(new Flight("Heathrow", "Heathrow"));
         } catch (RouteNotFoundException e) {
             e.printStackTrace();
         }

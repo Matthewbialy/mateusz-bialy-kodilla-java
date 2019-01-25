@@ -12,8 +12,8 @@ public final class Task {
     private final LocalDate deadline;
 
 
-    public Task(final String title, final String description, final User assignedUser,final User creator,
-                final LocalDate created,final LocalDate deadline) {
+    public Task(final String title, final String description, final User assignedUser, final User creator,
+                final LocalDate created, final LocalDate deadline) {
         this.title = title;
         this.description = description;
         this.assignedUser = assignedUser;

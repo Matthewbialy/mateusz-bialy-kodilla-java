@@ -12,9 +12,9 @@ public class LogicAirport {
         flights.put("Atlanta Airport", false);
         flights.put("Wrocław- Starachowice", true);
 
-        System.out.println("Departure" +  flight.getDepartureAirport() + "Arrivals:" + flight.getArrivalAirport());
+        System.out.println("Departure" + flight.getDepartureAirport() + "Arrivals:" + flight.getArrivalAirport());
 
-        if (flights.containsKey(flight.getArrivalAirport())){
+        if (flights.containsKey(flight.getArrivalAirport())) {
             System.out.println("There is a flight on this destination");
 
 

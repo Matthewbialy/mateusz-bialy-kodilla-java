@@ -9,11 +9,11 @@ public class ForumUserTestSuite {
     public void testGetLocationsOfFriends() {
 
         //Given
-        ForumUser user1 = new ForumUser("alan01", "Alan Kasovsky", "Washington" );
+        ForumUser user1 = new ForumUser("alan01", "Alan Kasovsky", "Washington");
         ForumUser user2 = new ForumUser("ethanreard", "Ethan Reard", "Miami");
         ForumUser user3 = new ForumUser("eRiK", "Erik Hull", "Key West");
         ForumUser user4 = new ForumUser("booth", "Mya Booth", "Washington");
-        ForumUser user5 = new ForumUser("nicoile1987", "Nicole Lee", "Orlando" );
+        ForumUser user5 = new ForumUser("nicoile1987", "Nicole Lee", "Orlando");
         ForumUser user6 = new ForumUser("nobody", "Briana Williams", "Miami");
         ForumUser user7 = new ForumUser("bigmac", "Robert Macdonald", "Washington");
         ForumUser user8 = new ForumUser("thebigone", "Clay Small", "Orlando");
@@ -40,7 +40,7 @@ public class ForumUserTestSuite {
         user9.addFriend(user3);
 
         //Then
-        Assert.assertEquals(3,user1.getLocationsOfFriends().size());
+        Assert.assertEquals(3, user1.getLocationsOfFriends().size());
         Assert.assertTrue(user1.getLocationsOfFriends().contains("Key West"));
         Assert.assertTrue(user1.getLocationsOfFriends().contains("Washington"));
         Assert.assertTrue(user1.getLocationsOfFriends().contains("Miami"));
@@ -53,11 +53,11 @@ public class ForumUserTestSuite {
     public void testGetLocationsOfFriensOfFreinds() {
 
         //Given
-        ForumUser user1 = new ForumUser("alan01", "Alan Kasovsky", "Washington" );
+        ForumUser user1 = new ForumUser("alan01", "Alan Kasovsky", "Washington");
         ForumUser user2 = new ForumUser("ethanreard", "Ethan Reard", "Miami");
         ForumUser user3 = new ForumUser("eRiK", "Erik Hull", "Key West");
         ForumUser user4 = new ForumUser("booth", "Mya Booth", "Washington");
-        ForumUser user5 = new ForumUser("nicoile1987", "Nicole Lee", "Orlando" );
+        ForumUser user5 = new ForumUser("nicoile1987", "Nicole Lee", "Orlando");
         ForumUser user6 = new ForumUser("nobody", "Briana Williams", "Miami");
         ForumUser user7 = new ForumUser("bigmac", "Robert Macdonald", "Washington");
         ForumUser user8 = new ForumUser("thebigone", "Clay Small", "Orlando");
@@ -84,7 +84,7 @@ public class ForumUserTestSuite {
         user9.addFriend(user3);
 
         //Then
-        Assert.assertEquals(3,user1.getLocationsOfFriendsOfFriends().size());
+        Assert.assertEquals(3, user1.getLocationsOfFriendsOfFriends().size());
         Assert.assertTrue(user1.getLocationsOfFriendsOfFriends().contains("Key West"));
         Assert.assertTrue(user1.getLocationsOfFriendsOfFriends().contains("Washington"));
         Assert.assertTrue(user1.getLocationsOfFriendsOfFriends().contains("Miami"));

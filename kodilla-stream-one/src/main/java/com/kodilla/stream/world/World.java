@@ -12,15 +12,15 @@ public final class World {
         theListOfContinents.add(continent);
     }
 
-    public  BigDecimal getPeopleQuanity() {
+    public BigDecimal getPeopleQuanity() {
 
         BigDecimal getPopulation = theListOfContinents.stream()
-                .flatMap(c->c.getTheListOfCountries().stream())
-                .map(c->c.getPeopleQuantity())
+                .flatMap(c -> c.getTheListOfCountries().stream())
+                .map(c -> c.getPeopleQuantity())
                 .reduce(BigDecimal.ZERO, (sum, current) -> sum = sum.add(current));
         return getPopulation;
 
     }
-    }
+}
 
 

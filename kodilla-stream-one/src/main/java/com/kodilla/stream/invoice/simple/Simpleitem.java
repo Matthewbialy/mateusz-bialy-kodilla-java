@@ -5,7 +5,7 @@ public final class Simpleitem {
     private final SimpleProduct product;
     private final double quanity;
 
-    public Simpleitem(final SimpleProduct product,final double quanity) {
+    public Simpleitem(final SimpleProduct product, final double quanity) {
         this.product = product;
         this.quanity = quanity;
     }

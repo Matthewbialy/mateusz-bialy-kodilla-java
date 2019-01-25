@@ -10,7 +10,7 @@ public final class Country {
     private final BigDecimal peopleQuantity;
 
 
-    public Country(final String nameOfCountry, final BigDecimal peopleQuantity ) {
+    public Country(final String nameOfCountry, final BigDecimal peopleQuantity) {
         this.nameOfCountry = nameOfCountry;
         this.peopleQuantity = peopleQuantity;
 

@@ -3,7 +3,7 @@ package com.kodilla.testing.collection;
 
 import java.util.ArrayList;
 
-public class ShapeCollector  {
+public class ShapeCollector {
 
 
     private ArrayList<Shape> figureList = new ArrayList<>();
@@ -18,7 +18,7 @@ public class ShapeCollector  {
     }
 
     public Shape getFigure(int n) {
-       return figureList.get(n);
+        return figureList.get(n);
     }
 
     public int checkFigureList() {

@@ -7,7 +7,7 @@ public class HealthyShop implements Shop {
     private int productQuanity;
 
 
-    public HealthyShop(final String nameOfSupplier, final String productType,final int productQuanity) {
+    public HealthyShop(final String nameOfSupplier, final String productType, final int productQuanity) {
         this.nameOfSupplier = nameOfSupplier;
         this.productType = productType;
         this.productQuanity = productQuanity;

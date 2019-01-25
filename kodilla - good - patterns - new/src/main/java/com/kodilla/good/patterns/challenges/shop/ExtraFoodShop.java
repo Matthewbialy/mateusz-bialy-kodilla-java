@@ -7,8 +7,7 @@ public class ExtraFoodShop implements Shop {
     private int productQuanity;
 
 
-
-    public ExtraFoodShop(final String nameOfSupplier, final String productType,final int productQuanity) {
+    public ExtraFoodShop(final String nameOfSupplier, final String productType, final int productQuanity) {
         this.nameOfSupplier = nameOfSupplier;
         this.productType = productType;
         this.productQuanity = productQuanity;

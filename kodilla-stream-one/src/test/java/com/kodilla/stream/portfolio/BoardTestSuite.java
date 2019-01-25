@@ -1,6 +1,8 @@
 package com.kodilla.stream.portfolio;
+
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -150,8 +152,8 @@ public class BoardTestSuite {
                 .filter(inProgressTasks::contains)
                 .flatMap(tl -> tl.getTasks().stream())
                 .map(t -> t.getCreated())
-                .map(a-> ChronoUnit.DAYS.between(a , LocalDate.now()))
-                .mapToLong(n->n).average().getAsDouble();
+                .map(a -> ChronoUnit.DAYS.between(a, LocalDate.now()))
+                .mapToLong(n -> n).average().getAsDouble();
 
         //Then
         Assert.assertEquals(10, longTasks);

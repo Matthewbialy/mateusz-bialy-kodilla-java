@@ -16,12 +16,10 @@ public class ChallengeOne {
 
         String text = theList.entrySet().stream()
                 .map(Map.Entry::getValue)
-                .flatMap(n->n.stream())
+                .flatMap(n -> n.stream())
                 .collect(Collectors.joining("!"));
 
-               System.out.println(text);
-
-
+        System.out.println(text);
 
 
     }

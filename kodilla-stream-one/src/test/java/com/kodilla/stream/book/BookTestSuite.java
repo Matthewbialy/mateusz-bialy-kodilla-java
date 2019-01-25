@@ -20,7 +20,7 @@ public class BookTestSuite {
         int numberOfBooksPublicatedAfter2007 = 0;
         for (Book book : books) {
             if (book.getYearOfPublication() > 2007) {
-                numberOfBooksPublicatedAfter2007 ++ ;
+                numberOfBooksPublicatedAfter2007++;
 
             }
         }
@@ -38,10 +38,10 @@ public class BookTestSuite {
 
         //Then
         int numberOfBooksPublicatedAfter2007 = IntStream.range(0, books.size())
-                .filter(n->books.get(n).getYearOfPublication() > 2007)
-                .map(n->1)
+                .filter(n -> books.get(n).getYearOfPublication() > 2007)
+                .map(n -> 1)
                 .sum();
 
-        Assert.assertEquals(3,numberOfBooksPublicatedAfter2007);
+        Assert.assertEquals(3, numberOfBooksPublicatedAfter2007);
     }
 }

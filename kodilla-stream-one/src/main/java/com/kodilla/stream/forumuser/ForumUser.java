@@ -40,6 +40,6 @@ public final class ForumUser {
 
     @Override
     public String toString() {
-        return "Forum User:" + "ID:" + id + '\n' + "User Name:" + userName + '\n' + "Sex:" + sex +'\n' + "Date of Birth:" + dateOfBirth + '\n' + "Post value:" + posts ;
+        return "Forum User:" + "ID:" + id + '\n' + "User Name:" + userName + '\n' + "Sex:" + sex + '\n' + "Date of Birth:" + dateOfBirth + '\n' + "Post value:" + posts;
     }
 }

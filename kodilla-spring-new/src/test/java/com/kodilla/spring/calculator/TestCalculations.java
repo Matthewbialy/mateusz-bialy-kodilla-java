@@ -35,7 +35,7 @@ public class TestCalculations {
         Calculator calculator = context.getBean(Calculator.class);
 
         //When
-        double result1 = calculator.sub(6,6);
+        double result1 = calculator.sub(6, 6);
         //Then
         Assert.assertEquals(0, result1, 0.001);
     }
@@ -48,7 +48,7 @@ public class TestCalculations {
         Calculator calculator = context.getBean(Calculator.class);
 
         //When
-        double result2 = calculator.mul(6,6);
+        double result2 = calculator.mul(6, 6);
         //Then
         Assert.assertEquals(36, result2, 0.001);
     }
@@ -61,8 +61,8 @@ public class TestCalculations {
         Calculator calculator = context.getBean(Calculator.class);
 
         //When
-        double result3 = calculator.div(6,6);
+        double result3 = calculator.div(6, 6);
         //Then
-        Assert.assertEquals(1,result3, 0.001);
+        Assert.assertEquals(1, result3, 0.001);
     }
 }

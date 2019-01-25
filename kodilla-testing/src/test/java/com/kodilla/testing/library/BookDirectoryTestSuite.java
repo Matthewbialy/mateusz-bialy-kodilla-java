@@ -53,26 +53,26 @@ public class BookDirectoryTestSuite {
     public void testListBooksWithConditionMoreThan20() {
 
 
-            //Given
+        //Given
 
-            LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
-            BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
-            List<Book> resultListof0Books = new ArrayList<Book>();
-            when(libraryDatabaseMock.listBooksWithCondition("Zero Books")).thenReturn(resultListof0Books);
+        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
+        List<Book> resultListof0Books = new ArrayList<Book>();
+        when(libraryDatabaseMock.listBooksWithCondition("Zero Books")).thenReturn(resultListof0Books);
 
-            //When
-            List<Book> theListOfBooks0 = bookLibrary.listBooksWithCondition("ZeroBooks");
+        //When
+        List<Book> theListOfBooks0 = bookLibrary.listBooksWithCondition("ZeroBooks");
 
-            //Then
-            assertEquals(0, theListOfBooks0.size());
+        //Then
+        assertEquals(0, theListOfBooks0.size());
 
 
-        }
+    }
 
     @Test
     public void testListBooksWithConditionfragmentShoreterThan3() {
 
-       //Given
+        //Given
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOf10Books = generateListOfNBooks(10);
@@ -89,7 +89,7 @@ public class BookDirectoryTestSuite {
     @Test
     public void testListBooksInHandsOf0() {
         //Given
-        LibraryUser libraryUser = new LibraryUser("Matthew","Bialy","920102");
+        LibraryUser libraryUser = new LibraryUser("Matthew", "Bialy", "920102");
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListBooksInHandsOf0 = generateListOfNBooks(0);
@@ -100,7 +100,7 @@ public class BookDirectoryTestSuite {
 
 
         //Then
-        assertEquals(0,theListBooksInHandsOf0.size());
+        assertEquals(0, theListBooksInHandsOf0.size());
 
     }
 
@@ -117,13 +117,13 @@ public class BookDirectoryTestSuite {
         List<Book> theListBooksInHandsof1 = bookLibrary.listBooksInHandsOf(libraryUser);
 
         //Then
-        assertEquals(1,theListBooksInHandsof1.size());
+        assertEquals(1, theListBooksInHandsof1.size());
     }
 
     @Test
     public void testListBooksInHandsOf5() {
         //Given
-        LibraryUser libraryUser = new LibraryUser("Matthew","Bialy", "8282992");
+        LibraryUser libraryUser = new LibraryUser("Matthew", "Bialy", "8282992");
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListInHandOf5 = generateListOfNBooks(5);
@@ -133,7 +133,7 @@ public class BookDirectoryTestSuite {
         List<Book> theListBooksinHandsOf5 = bookLibrary.listBooksInHandsOf(libraryUser);
 
         //Then
-        assertEquals(5,theListBooksinHandsOf5.size());
+        assertEquals(5, theListBooksinHandsOf5.size());
     }
 
 }

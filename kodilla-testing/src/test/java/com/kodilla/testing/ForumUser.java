@@ -16,40 +16,40 @@ public class ForumUser {
         this.realName = realName;
     }
 
-    public void addPost(String author, String postBody){
+    public void addPost(String author, String postBody) {
         // do nothing
     }
 
-    public void addComment(ForumPost thePost, String author, String commentBody){
+    public void addComment(ForumPost thePost, String author, String commentBody) {
         // do nothing
     }
 
-    public int getPostsQuantity(){
+    public int getPostsQuantity() {
         // return 100 temporarily
         return 100;
     }
 
-    public int getCommentsQuantity(){
+    public int getCommentsQuantity() {
         // return 100 temporarily
         return 100;
     }
 
-    public ForumPost getPost(int postNumber){
+    public ForumPost getPost(int postNumber) {
         // returning null means that the operation was unsuccessful
         return null;
     }
 
-    public ForumComment getComment(int commentNumber){
+    public ForumComment getComment(int commentNumber) {
         // returning null means that the operation was unsuccessful
         return null;
     }
 
-    public boolean removePost(ForumPost thePost){
+    public boolean removePost(ForumPost thePost) {
         // return true temporarily
         return true;
     }
 
-    public boolean removeComment(ForumComment theComment){
+    public boolean removeComment(ForumComment theComment) {
         // return true temporarily
         return true;
     }

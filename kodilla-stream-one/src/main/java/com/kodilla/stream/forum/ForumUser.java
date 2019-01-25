@@ -48,10 +48,10 @@ public final class ForumUser {
     }
 
     @Override
-    public boolean equals(Object o ) {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof ForumUser)) return false;
-        ForumUser forumUser = (ForumUser) o ;
+        ForumUser forumUser = (ForumUser) o;
         return username.equals(forumUser.username);
     }
 

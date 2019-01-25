@@ -10,7 +10,7 @@ public class TestingMain {
 
         if (expected == result) {
             System.out.println("com.kodilla.exception.test OK");
-        }else{
+        } else {
             System.out.println("Error");
         }
 
@@ -19,7 +19,7 @@ public class TestingMain {
 
         if (expected1 == result1) {
             System.out.println("Test OK");
-        }else{
+        } else {
             System.out.println("error");
         }
     }

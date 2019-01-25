@@ -14,13 +14,13 @@ public class ArrayOperationsTestSuite {
 
         //Given
         List<ArrayOperations> theList = new ArrayList<>();
-        int [] myArray = {1,10,17,24};
+        int[] myArray = {1, 10, 17, 24};
 
         //When
         double list = ArrayOperations.getAverage(myArray);
 
         //Then
         double expectedArray = new Double(13.0);
-       Assert.assertEquals(expectedArray,list,0001);
+        Assert.assertEquals(expectedArray, list, 0001);
     }
 }

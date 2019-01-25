@@ -4,5 +4,5 @@ public interface Shop {
 
     public void processOrder();
 
-    }
+}
 
