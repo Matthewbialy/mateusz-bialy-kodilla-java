@@ -15,19 +15,25 @@ public class Calculator {
     }
 
     double add(double a, double b) {
-       return a + b;
+       double result = a + b;
+       return result;
     }
 
     double sub(double a, double b){
-        return a - b;
+        double result2 = a - b;
+        return result2;
     }
 
     double mul(double a, double b){
-        return a * b;
+        double result3 = a * b;
+        return result3;
     }
 
     double div(double a, double b) {
-        return a/b ;
+        double result4 = a / b;
+        return result4;
+
     }
+
 
 }
