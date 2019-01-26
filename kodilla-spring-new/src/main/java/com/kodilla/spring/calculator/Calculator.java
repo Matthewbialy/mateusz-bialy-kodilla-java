@@ -10,10 +10,6 @@ public class Calculator {
     @Autowired
     private Display display;
 
-    public void displayValue(double val) {
-        display.displayValue(val);
-    }
-
     double add(double a, double b) {
        double result = a + b;
        display.displayValue(result);
