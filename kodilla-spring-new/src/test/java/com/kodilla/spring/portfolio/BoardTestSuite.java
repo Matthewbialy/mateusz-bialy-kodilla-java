@@ -52,7 +52,9 @@ public class BoardTestSuite {
         taskList3.getTasks().add("third task");
         System.out.println(taskList3);
         //Then
-        Assert.assertTrue(taskList1.getTasks().isEmpty());
+        Assert.assertTrue(taskList1.getTasks().contains("first task"));
+        Assert.assertTrue(taskList2.getTasks().contains("secound task"));
+        Assert.assertTrue(taskList3.getTasks().contains("third task"));
 
     }
 }

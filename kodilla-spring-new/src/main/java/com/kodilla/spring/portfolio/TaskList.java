@@ -7,8 +7,8 @@ public class TaskList {
 
     public List<String> tasks;
 
-    public TaskList(List<String> tasks) {
-        this.tasks = new ArrayList<>();
+    public TaskList() {
+        this.tasks = new ArrayList();
 
     }
 
