@@ -5,3 +5,5 @@ include 'kodilla-spring-intro-new'
 include 'kodilla-exception-new'
 include 'kodilla-spring-new'
 include 'kodilla-stream-one'
+include 'kodilla-patterns'
+
