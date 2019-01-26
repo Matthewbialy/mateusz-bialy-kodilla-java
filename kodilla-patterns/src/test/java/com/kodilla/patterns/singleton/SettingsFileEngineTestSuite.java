@@ -1,4 +1,4 @@
-package com.kodilla.patterns.singelton;
+package com.kodilla.patterns.singleton;
 
 import org.junit.AfterClass;
 import org.junit.Assert;

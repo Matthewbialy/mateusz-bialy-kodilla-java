@@ -1,4 +1,4 @@
-package com.kodilla.patterns.singelton.prototype;
+package com.kodilla.patterns.singleton.prototype;
 
 import com.kodilla.patterns.prototype.Board;
 import com.kodilla.patterns.prototype.Task;
