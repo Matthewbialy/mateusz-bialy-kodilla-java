@@ -11,18 +11,18 @@ public class Calculator {
     private Display display;
 
     double add(double a, double b) {
-       double result = a + b;
-       display.displayValue(result);
-       return result;
+        double result = a + b;
+        display.displayValue(result);
+        return result;
     }
 
-    double sub(double a, double b){
+    double sub(double a, double b) {
         double result2 = a - b;
         display.displayValue(result2);
         return result2;
     }
 
-    double mul(double a, double b){
+    double mul(double a, double b) {
         double result3 = a * b;
         display.displayValue(result3);
         return result3;

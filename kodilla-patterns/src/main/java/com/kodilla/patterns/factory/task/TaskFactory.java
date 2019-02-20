@@ -1,7 +1,6 @@
 package com.kodilla.patterns.factory.task;
 
 
-
 public final class TaskFactory {
 
     public static final String SHOPPINGTASK = "SHOPPINGTASK";
@@ -11,13 +10,13 @@ public final class TaskFactory {
     public final Task makeTask(final String taskClass) {
         switch (taskClass) {
             case SHOPPINGTASK:
-            return new ShoppingTask("FirstTask", "Food", 4);
+                return new ShoppingTask("FirstTask", "Food", 4);
             case PAINTINGTASK:
                 return new PaintingTask("SecoundTask", "Blue", "Car");
             case DRIVINGTASK:
                 return new DrivingTask("ThirdTask", "London", "Car");
-                default:
-                    return null;
+            default:
+                return null;
         }
     }
 }

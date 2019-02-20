@@ -6,17 +6,18 @@ import org.junit.Test;
 
 public class LoggerTestSuite {
 
-@BeforeClass
+    @BeforeClass
     public static void logSettingFile() {
-    Logger.getInstance().log("myapp.settings");
-}
-@Test
+        Logger.getInstance().log("myapp.settings");
+    }
+
+    @Test
     public void testGetLastLog() {
-    //Given
-    //Then
-    String lastLog = Logger.getInstance().getLastLog();
-    System.out.println("Last Log:" + lastLog);
-    //Then
-    Assert.assertEquals("myapp.settings", lastLog);
-}
+        //Given
+        //Then
+        String lastLog = Logger.getInstance().getLastLog();
+        System.out.println("Last Log:" + lastLog);
+        //Then
+        Assert.assertEquals("myapp.settings", lastLog);
+    }
 }

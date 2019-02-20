@@ -3,6 +3,7 @@ package com.kodilla.patterns.singleton.builder.pizza;
 import com.kodilla.patterns.builder.pizza.Pizza;
 import org.junit.Assert;
 import org.junit.Test;
+
 public class PizzaTestSuite {
     @Test
     public void testPizzaNew() {

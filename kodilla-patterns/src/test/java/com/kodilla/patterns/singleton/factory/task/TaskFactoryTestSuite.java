@@ -23,9 +23,9 @@ public class TaskFactoryTestSuite {
         //Given
         TaskFactory factory = new TaskFactory();
         //When
-        Task paintingTask= factory.makeTask(TaskFactory.PAINTINGTASK);
+        Task paintingTask = factory.makeTask(TaskFactory.PAINTINGTASK);
         //Then
-        Assert.assertEquals("SecoundTask",paintingTask.getTaskName() );
+        Assert.assertEquals("SecoundTask", paintingTask.getTaskName());
         Assert.assertEquals(true, paintingTask.isTaskExecuted());
     }
 

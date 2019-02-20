@@ -8,7 +8,7 @@ public class Display {
 
     private Calculator calculator;
 
-    public void displayValue(double val){
+    public void displayValue(double val) {
         System.out.println(val);
     }
 

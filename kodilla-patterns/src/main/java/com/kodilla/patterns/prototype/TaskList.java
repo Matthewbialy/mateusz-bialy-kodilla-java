@@ -23,7 +23,7 @@ public class TaskList {
     @Override
     public String toString() {
         String s = "   List [" + name + "]";
-        for(Task task : tasks) {
+        for (Task task : tasks) {
             s = s + "\n" + task.toString();
         }
         return s;

@@ -42,7 +42,7 @@ public final class Bigmac {
         }
     }
 
-    private Bigmac(final String bun, final int burgers, final String souce,List<String> ingredients) {
+    private Bigmac(final String bun, final int burgers, final String souce, List<String> ingredients) {
         this.bun = bun;
         this.burgers = burgers;
         this.souce = souce;
@@ -67,6 +67,6 @@ public final class Bigmac {
 
     @Override
     public String toString() {
-        return "BigMac: \n " + "Bun: " + bun +'\n'+ "Burgers: " + burgers + '\n'+ "Souce: " + souce + '\n'+ "Ingredients: " + ingredients;
+        return "BigMac: \n " + "Bun: " + bun + '\n' + "Burgers: " + burgers + '\n' + "Souce: " + souce + '\n' + "Ingredients: " + ingredients;
     }
 }
