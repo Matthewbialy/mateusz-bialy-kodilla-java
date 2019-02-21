@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+import java.util.Optional;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TaskDaoTestSuite {
@@ -15,20 +18,23 @@ public class TaskDaoTestSuite {
     private TaskDao taskDao;
     private static final String DESCRIPTION = "Test: Learn Hibernate";
 
+
     @Test
-    public void testTaskDaoSave() {
+    public void testTaskDaoFindByDuration() {
         //Given
-        Task task = new Task(DESCRIPTION, 7);
+        Task task = new Task(DESCRIPTION, 4);
+        taskDao.save(task);
+        int duration = task.getDuration();
 
         //When
-        taskDao.save(task);
+        List<Task> readTasks = taskDao.findByDuration(duration);
 
         //Then
-        int id = task.getId();
-        Task readTask = taskDao.findOne(id);
-        Assert.assertEquals(id, readTask.getId());
+        Assert.assertEquals(1, readTasks.size());
 
         //CleanUp
-        taskDao.delete(id);
+        //int id = readTasks.get(0).getId();
+        //taskDao.deleteById(id);
     }
 }
+

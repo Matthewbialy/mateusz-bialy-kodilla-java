@@ -3,20 +3,24 @@ package com.kodilla.hibernate.tasklist;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+
+
 @Entity
-@Table(name = "TASKLISTS")
+@Table(name = "TASKSLIST")
 public final class TaskList {
 
     private int id;
     private String listName;
     private String description;
 
+    public TaskList(String description) {
+    }
+
     public TaskList(int id, String listName, String description) {
         this.id = id;
         this.listName = listName;
         this.description = description;
     }
-
     @Id
     @GeneratedValue
     @NotNull
@@ -24,10 +28,12 @@ public final class TaskList {
     public int getId() {
         return id;
     }
+
     @Column(name = "LISTNAME")
     public String getListName() {
         return listName;
     }
+
     @Column(name = "DESCRIPTION")
     public String getDescription() {
         return description;
