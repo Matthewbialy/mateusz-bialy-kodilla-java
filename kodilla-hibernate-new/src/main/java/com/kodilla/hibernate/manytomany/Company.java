@@ -5,9 +5,17 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@NamedNativeQuery(
+        name = "Company.retrieveCompanyByThreeChar",
+        query = "SELECT * FROM COMAPNIES "+
+                "WHERE SUBSTR(COMPANY_NAME,1,3) LIKE :THIS_COMPANY_NAME)",
+        resultClass = Company.class
+)
+
 @Entity
 @Table(name = "COMPANIES")
-public class Company {
+public final class Company {
     private int id;
     private String name;
     private List<Employee> employees = new ArrayList<>();
