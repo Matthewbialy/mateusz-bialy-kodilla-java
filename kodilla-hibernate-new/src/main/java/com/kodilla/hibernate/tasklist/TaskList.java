@@ -1,9 +1,6 @@
 package com.kodilla.hibernate.tasklist;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-
-
 
 @Entity
 @Table(name = "TASKSLIST")
@@ -13,14 +10,16 @@ public final class TaskList {
     private String listName;
     private String description;
 
-    public TaskList(String description) {
-    }
-
     public TaskList(int id, String listName, String description) {
         this.id = id;
         this.listName = listName;
         this.description = description;
     }
+
+    public TaskList() {
+
+    }
+
     @Id
     @GeneratedValue
     @NotNull
@@ -50,4 +49,6 @@ public final class TaskList {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 }
