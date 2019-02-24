@@ -8,8 +8,7 @@ import java.util.List;
 
 @NamedNativeQuery(
         name = "Company.retrieveCompanyByThreeChar",
-        query = "SELECT * FROM COMAPNIES "+
-                "WHERE SUBSTR(COMPANY_NAME,1,3) LIKE :THIS_COMPANY_NAME)",
+        query = "SELECT * FROM companies WHERE INSTR(company_name, 'mac') > 0 ",
         resultClass = Company.class
 )
 
