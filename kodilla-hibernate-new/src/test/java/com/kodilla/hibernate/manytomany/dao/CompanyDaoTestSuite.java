@@ -95,12 +95,12 @@ public class CompanyDaoTestSuite {
 
         //When
         List<Employee> findSurname = employeeDao.findSurname("smith");
-        List<Company> findByTheeLetters = companyDao.retrieveCompanyByThreeChar("mac");
+        List<Company> findByTheeLetters = companyDao.retrieveCompanyByThreeChar("Sof");
 
 
         //Then
-        Assert.assertEquals(16, findSurname.size());
-        Assert.assertEquals(1, findByTheeLetters.size());
+        Assert.assertEquals(31, findSurname.size());
+        Assert.assertEquals(31, findByTheeLetters.size());
 
 
         //CleanUp

@@ -5,10 +5,9 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @NamedNativeQuery(
         name = "Company.retrieveCompanyByThreeChar",
-        query = "SELECT * FROM companies WHERE INSTR(company_name, 'mac') > 0 ",
+        query = "SELECT * FROM companies WHERE INSTR(company_name, :COMPANY_NAME) ",
         resultClass = Company.class
 )
 
