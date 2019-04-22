@@ -13,15 +13,15 @@ public class BoardConfig {
 
     @Autowired
     @Qualifier("taskList1")
-    private TaskList toDoList;
+    public TaskList toDoList;
 
     @Autowired
     @Qualifier("taksList2")
-    private TaskList doneList;
+    public TaskList doneList;
 
     @Autowired
     @Qualifier("taksList3")
-    private TaskList inProgressList;
+    public TaskList inProgressList;
 
     @Bean
     public Board getBoard() {

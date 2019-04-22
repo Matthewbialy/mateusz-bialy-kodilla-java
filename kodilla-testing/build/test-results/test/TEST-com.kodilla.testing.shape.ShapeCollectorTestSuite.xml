@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.kodilla.testing.shape.ShapeCollectorTestSuite" tests="2" skipped="0" failures="0" errors="0"
-           timestamp="2018-12-26T17:27:42" hostname="Air-Mateusz.home" time="0.006">
+           timestamp="2019-02-27T16:52:08" hostname="Air-Mateusz.home" time="0.005">
     <properties/>
     <testcase name="testRemoveFigure" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.003"/>
-    <testcase name="testAddFigureName" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.003"/>
+    <testcase name="testAddFigureName" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite" time="0.002"/>
     <system-out><![CDATA[This is the beginning of tests.
 Test Case: begin
 Test Case: end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.kodilla.testing.forum.StatisticsTest" tests="4" skipped="0" failures="0" errors="0"
-           timestamp="2018-12-26T17:27:42" hostname="Air-Mateusz.home" time="0.024">
+           timestamp="2019-02-27T16:52:08" hostname="Air-Mateusz.home" time="0.012">
     <properties/>
-    <testcase name="getTestPostCountZero" classname="com.kodilla.testing.forum.StatisticsTest" time="0.014"/>
-    <testcase name="getTestCommentsAndPosts1" classname="com.kodilla.testing.forum.StatisticsTest" time="0.002"/>
-    <testcase name="getStatisticsTest" classname="com.kodilla.testing.forum.StatisticsTest" time="0.003"/>
-    <testcase name="getTestCommentsAndPosts" classname="com.kodilla.testing.forum.StatisticsTest" time="0.003"/>
+    <testcase name="getTestPostCountZero" classname="com.kodilla.testing.forum.StatisticsTest" time="0.007"/>
+    <testcase name="getTestCommentsAndPosts1" classname="com.kodilla.testing.forum.StatisticsTest" time="0.001"/>
+    <testcase name="getStatisticsTest" classname="com.kodilla.testing.forum.StatisticsTest" time="0.001"/>
+    <testcase name="getTestCommentsAndPosts" classname="com.kodilla.testing.forum.StatisticsTest" time="0.002"/>
     <system-out><![CDATA[Test Case: begin
 Test Case: end
 Test Case: begin

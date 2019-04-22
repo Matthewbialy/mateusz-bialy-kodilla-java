@@ -4,9 +4,9 @@ package com.kodilla.spring.portfolio;
 public class Board {
 
 
-    private TaskList toDoList;
-    private TaskList inProgressList;
-    private TaskList doneList;
+    public TaskList toDoList;
+    public TaskList inProgressList;
+    public TaskList doneList;
 
     public Board(TaskList toDoList, TaskList inProgressList, TaskList doneList) {
         this.toDoList = toDoList;
@@ -14,15 +14,15 @@ public class Board {
         this.doneList = doneList;
     }
 
-    private TaskList getToDoList() {
+    public TaskList getToDoList() {
         return toDoList;
     }
 
-    private TaskList getInProgressList() {
+    public TaskList getInProgressList() {
         return inProgressList;
     }
 
-    private TaskList getDoneList() {
+    public TaskList getDoneList() {
         return doneList;
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.portfolio.BoardTestSuite" tests="4" skipped="0" failures="0" errors="0"
+           timestamp="2019-02-27T16:52:03" hostname="Air-Mateusz.home" time="0.153">
+    <properties/>
+    <testcase name="testBoardOne" classname="com.kodilla.spring.portfolio.BoardTestSuite" time="0.036"/>
+    <testcase name="testBoardTwo" classname="com.kodilla.spring.portfolio.BoardTestSuite" time="0.026"/>
+    <testcase name="testTaskAdd" classname="com.kodilla.spring.portfolio.BoardTestSuite" time="0.032"/>
+    <testcase name="testBoardThree" classname="com.kodilla.spring.portfolio.BoardTestSuite" time="0.055"/>
+    <system-out><![CDATA[2019-02-27 17:52:03.551  INFO 11589 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3dd919fa: startup date [Wed Feb 27 17:52:03 CET 2019]; root of context hierarchy
+2019-02-27 17:52:03.589  INFO 11589 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4585ecac: startup date [Wed Feb 27 17:52:03 CET 2019]; root of context hierarchy
+2019-02-27 17:52:03.615  INFO 11589 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@365e17a: startup date [Wed Feb 27 17:52:03 CET 2019]; root of context hierarchy
+com.kodilla.spring.portfolio.TaskList@7e0a6811
+com.kodilla.spring.portfolio.TaskList@18c7e8b
+com.kodilla.spring.portfolio.TaskList@5b9db643
+2019-02-27 17:52:03.650  INFO 11589 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f355126: startup date [Wed Feb 27 17:52:03 CET 2019]; root of context hierarchy
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0"
-           timestamp="2018-12-26T17:27:42" hostname="Air-Mateusz.home" time="0.245">
+           timestamp="2019-02-27T16:52:08" hostname="Air-Mateusz.home" time="0.165">
     <properties/>
     <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.227"/>
+              time="0.153"/>
     <testcase name="testListBooksWithConditionReturnList" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.003"/>
+              time="0.002"/>
     <testcase name="testListBooksWithConditionfragmentShoreterThan3"
-              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.01"/>
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.007"/>
     <testcase name="testListBooksInHandsOf0" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
               time="0.001"/>
     <testcase name="testListBooksInHandsOf1" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
               time="0.001"/>
     <testcase name="testListBooksInHandsOf5" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.002"/>
+              time="0.001"/>
     <system-out><![CDATA[]]></system-out>
     <system-err><![CDATA[]]></system-err>
 </testsuite>
